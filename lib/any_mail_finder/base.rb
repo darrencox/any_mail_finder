@@ -2,7 +2,7 @@ require "json"
 module AnyMailFinder
   class Base
     include HTTParty
-    API_HOST = "https://api.anymailfinder.com/v4.0".freeze
+    API_HOST = "https://api.anymailfinder.com/v4.1".freeze
 
     def get(url, options = {})
       request("get", url, options)
